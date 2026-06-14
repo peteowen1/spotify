@@ -1,0 +1,44 @@
+Package: spotify
+Type: Package
+Title: Scrape and Analyze Spotify Charts Data
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "User", "Name",
+      email = "user@example.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: A comprehensive R package for scraping Spotify charts data and
+    performing analysis on streaming statistics. Provides functions to collect
+    daily and regional chart data, process streaming information, and analyze
+    artist and track performance over time.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends:
+    R (>= 4.0.0)
+Imports:
+    httr2,
+    dplyr,
+    lubridate,
+    jsonlite,
+    purrr,
+    tibble,
+    rlang,
+    glue,
+    readr,
+    stringr,
+    digest,
+    stats,
+    utils
+Suggests:
+    ggplot2,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    rvest,
+    RSelenium
+VignetteBuilder: knitr
+Config/testthat/edition: 3
