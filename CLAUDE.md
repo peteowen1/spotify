@@ -53,7 +53,6 @@ Combine with `region` for country-specific cuts (`get_regional_charts()` is the 
 - **Polite scraping** — `rate_limit()` throttles requests; `get_chart_range(start, end)` paces multi-day pulls automatically.
 - **Prefer parquet/CSV over RDS** for `save_chart_data()` (global rule from `~/.claude/CLAUDE.md`). The defaults already do this — don't change them.
 - **Artist analysis: "main" vs "all"** — Spotify attributes streams to the first-billed artist by default. `get_all_artists_streams()` redistributes to every credited artist; `compare_main_vs_all_artists()` quantifies the gap. Use the "all" view when measuring collaboration value.
-- **NAMESPACE auto-generated** — never edit; use `@export` + `devtools::document()`.
 
 ## Cache & Backup
 
